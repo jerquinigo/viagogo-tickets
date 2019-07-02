@@ -1,0 +1,13 @@
+.logo {
+  font-size: 3em;
+  margin-top: 0px;
+  margin-left: 2%;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.navbarInnerContainer {
+  width: 100%;
+  display: flex;
+  background-color: grey;
+}
