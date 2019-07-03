@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+const tickets = require("../tickets.js");
 
 class DisplaySearchResultsWithData extends Component {
   // constructor(){
@@ -19,7 +20,7 @@ class DisplaySearchResultsWithData extends Component {
   };
 
   render() {
-    console.log(this.props.searchData[0], "the final dayta");
+    // console.log(this.props.searchData[0], "the final dayta");
     return <div>{this.displayAllTicketInfo()}</div>;
   }
 }

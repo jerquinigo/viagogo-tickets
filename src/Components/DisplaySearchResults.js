@@ -41,7 +41,13 @@ class DisplaySearchResults extends Component {
             objData[i] = ticInfo[i];
             // console.log(objData);
             values = Object.values(objData);
-            return <DisplaySearchResultsWithData key={i} searchData={values} />;
+            return (
+              <DisplaySearchResultsWithData
+                key={i}
+                searchData={values}
+                end={this.props.dateEnd}
+              />
+            );
             // console.log(ticInfo[i], "the tic info");
           }
         });
@@ -50,7 +56,7 @@ class DisplaySearchResults extends Component {
   };
 
   render() {
-    console.log(this.props, "the props within the display search");
+    console.log(this.props.dateEnd, "in the searchResults");
     return (
       <div>
         DisplaySearchResults
