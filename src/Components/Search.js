@@ -21,9 +21,7 @@ class Search extends Component {
     let ticInfo = Object.values(tickets.default.Items);
     let singleCity = {};
     ticInfo.forEach((el, i) => {
-      console.log(el.VenueCity, "the city");
       singleCity[el.VenueCity] = el.VenueCity;
-      console.log(singleCity);
     });
     let finalCity = Object.values(singleCity);
     return finalCity.map((el, i) => {
@@ -46,7 +44,7 @@ class Search extends Component {
 
   render() {
     // console.log(typeof tickets.default.Items, "the items");
-    console.log(this.state, "location");
+    // console.log(this.state, "location");
     return (
       <div>
         search Component

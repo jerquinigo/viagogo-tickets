@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DisplaySearchResultsWithData from "./DisplaySearchResultsWithData.js";
 const tickets = require("../tickets.js");
 
 class DisplaySearchResults extends Component {
@@ -28,10 +29,33 @@ class DisplaySearchResults extends Component {
     });
   };
 
-  displayTicketResults = () => {};
+  displayTicketResults = () => {
+    let objData = {};
+    let values;
+    let ticInfo = Object.values(tickets.default.Items);
+    if (this.state.eventLocation && this.state.eventPrice) {
+      return this.state.eventLocation.map((location, i) => {
+        return this.state.eventPrice.map((price, j) => {
+          if (location === this.props.location && price === this.props.price) {
+            // console.log(ticInfo[i].VenueName, "chekck");
+            objData[i] = ticInfo[i];
+            // console.log(objData);
+            values = Object.values(objData);
+            return <DisplaySearchResultsWithData key={i} searchData={values} />;
+            // console.log(ticInfo[i], "the tic info");
+          }
+        });
+      });
+    }
+  };
 
   render() {
-    return <div>DisplaySearchResults</div>;
+    return (
+      <div>
+        DisplaySearchResults
+        {this.displayTicketResults()}
+      </div>
+    );
   }
 }
 
