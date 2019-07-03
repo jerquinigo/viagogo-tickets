@@ -7,7 +7,9 @@ class Search extends Component {
     super();
     this.state = {
       location: "",
-      price: ""
+      price: "",
+      dateStart: "",
+      dateEnd: ""
     };
   }
 
@@ -15,6 +17,27 @@ class Search extends Component {
     this.setState({
       [event.target.name]: event.target.value
     });
+  };
+
+  calendarInputs = () => {
+    return (
+      <div>
+        <label>enter start date</label>
+        <input
+          onChange={this.handleChange}
+          type="date"
+          name="dateStart"
+          placeholder="enter start"
+        />
+        <label>enter end date</label>
+        <input
+          onChange={this.handleChange}
+          type="date"
+          name="dateEnd"
+          placeholder="enter end"
+        />
+      </div>
+    );
   };
 
   displayLocations = () => {
@@ -45,6 +68,7 @@ class Search extends Component {
   render() {
     // console.log(typeof tickets.default.Items, "the items");
     // console.log(this.state, "location");
+    console.log(this.state.dateStart, "the start date");
     return (
       <div>
         search Component
@@ -67,7 +91,10 @@ class Search extends Component {
         <DisplaySearchResults
           location={this.state.location}
           price={this.state.price}
+          dateStart={this.state.dateStart}
+          dateEnd={this.state.dateEnd}
         />
+        {this.calendarInputs()}
       </div>
     );
   }

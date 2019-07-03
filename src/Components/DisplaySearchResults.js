@@ -50,6 +50,7 @@ class DisplaySearchResults extends Component {
   };
 
   render() {
+    console.log(this.props, "the props within the display search");
     return (
       <div>
         DisplaySearchResults

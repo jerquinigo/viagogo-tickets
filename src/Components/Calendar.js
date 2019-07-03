@@ -15,8 +15,12 @@ class CalendarComponent extends Component {
     });
   };
 
+  checkDate = () => {
+    let date = this.state.value;
+  };
+
   render() {
-    // console.log(this.state.value);
+    console.log(this.state.value);
     return (
       <div>
         <Calendar
@@ -24,6 +28,7 @@ class CalendarComponent extends Component {
           onChange={this.handleChange}
           value={this.state.value}
         />
+        {this.checkDate()}
       </div>
     );
   }
