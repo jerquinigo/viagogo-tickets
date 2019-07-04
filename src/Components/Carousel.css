@@ -1,0 +1,34 @@
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.img {
+  background-size: contain;
+}
+
+.testing {
+  display: flex;
+}
+
+.slideshowBox {
+  width: 75%;
+  margin: 0px auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainContainerCarousel {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.carousel.carousel-slider {
+}
