@@ -15,6 +15,12 @@ class NavBar extends Component {
               ViaEltonGo
             </Link>
           </h1>
+
+          <h2>
+            <Link className="links" to="/search">
+              Search Tickets
+            </Link>
+          </h2>
         </div>
       </div>
     );

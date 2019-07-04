@@ -12,6 +12,9 @@ class Homepage extends Component {
           Come watch the Legendary Elton John perform at your choice of location
           for a great price.
         </p>
+        <a href="/search">
+          <button>Search Tickets</button>
+        </a>
         <Carousel />
       </div>
     );
