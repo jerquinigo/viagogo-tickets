@@ -16,7 +16,7 @@ class NavBar extends Component {
             </Link>
           </h1>
 
-          <h2>
+          <h2 className="searchTicketsLink">
             <Link className="links" to="/search">
               Search Tickets
             </Link>

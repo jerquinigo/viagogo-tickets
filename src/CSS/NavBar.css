@@ -21,3 +21,11 @@
 a {
   color: inherit;
 }
+
+.searchTicketsLink {
+  font-size: 2em;
+  margin-top: 0px;
+  margin-right: 2%;
+  color: white;
+  margin-bottom: 0px;
+}
