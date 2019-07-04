@@ -45,7 +45,8 @@ class DisplaySearchResults extends Component {
               <DisplaySearchResultsWithData
                 key={i}
                 searchData={values}
-                end={this.props.dateEnd}
+                dateStart={this.props.dateStart}
+                dateEnd={this.props.dateEnd}
               />
             );
             // console.log(ticInfo[i], "the tic info");
