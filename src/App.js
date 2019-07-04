@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "./Components/NavBar.js";
 import Homepage from "./Components/Homepage.js";
-import Seach from "./Components/Search.js";
+import Search from "./Components/Search.js";
 // import CalendarComponent from "./Components/Calendar.js";
-import { Router } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 // import { tickets } from "./tickets.js";
 const tickets = require("./tickets.js");
@@ -13,8 +13,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Homepage />
-      <Seach />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/search" component={Search} />
+      </Switch>
     </div>
   );
 }
