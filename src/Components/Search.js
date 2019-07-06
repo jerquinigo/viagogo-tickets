@@ -128,30 +128,32 @@ class Search extends Component {
           <div>
             <img className="eltonBannerPic" src={eltonBanner} alt="" />
           </div>
-          <div className="selectionInput">
-            <span>Select City: </span>
-            <select
-              className="selectTag"
-              onChange={this.handleChange}
-              name="location"
-              value={this.state.location}
-            >
-              <option>select city</option>
-              {this.displayLocations()}
-            </select>
+          <div className="selectionContainer">
+            <div className="selectionInput">
+              <span>Select City: </span>
+              <select
+                className="selectTag"
+                onChange={this.handleChange}
+                name="location"
+                value={this.state.location}
+              >
+                <option>select city</option>
+                {this.displayLocations()}
+              </select>
 
-            <span>Select Price:</span>
-            <select
-              className="selectTag"
-              onChange={this.handleChange}
-              name="price"
-              value={this.state.price}
-            >
-              <option>Select value/All</option>
-              {this.getPrice()}
-            </select>
+              <span>Select Price:</span>
+              <select
+                className="selectTag"
+                onChange={this.handleChange}
+                name="price"
+                value={this.state.price}
+              >
+                <option>Select value/All</option>
+                {this.getPrice()}
+              </select>
+            </div>
+            {this.calendarInputs()}
           </div>
-          {this.calendarInputs()}
           {(!this.state.price && !this.state.location) ||
           (this.state.price === "Select value/All" ||
             this.state.location === "select city") ? (
