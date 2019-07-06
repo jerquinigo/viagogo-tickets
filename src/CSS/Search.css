@@ -1,0 +1,23 @@
+.mainSearchContainer {
+  width: 100%;
+  display: flex;
+}
+
+.innerSearchContainer {
+  width: 100%;
+}
+
+.displayResults {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selectionInput {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.calendarInputDiv {
+  display: flex;
+  justify-content: flex-start;
+}

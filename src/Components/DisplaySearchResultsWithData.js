@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../CSS/DisplaySearchResultsWithData.css";
 const tickets = require("../tickets.js");
 
 class DisplaySearchResultsWithData extends Component {
@@ -16,16 +17,29 @@ class DisplaySearchResultsWithData extends Component {
   displayAllTicketInfo = () => {
     //needs this.props.searchData.nameoftarget for me to access it
     return (
-      <div>
-        <p>{this.props.searchData[0].VenueCity}</p>
-        <br />
-        <p>{this.props.searchData[0].VenueName}</p>
-        <br />
-        <p>{this.props.searchData[0].MinPrice}</p>
-        <br />
-        <p>{this.props.searchData[0].Date}</p>
-        <br />
-        <p>{this.props.searchData[0].Time}</p>
+      <div className="displayResults">
+        <div className="innerDisplayResults">
+          <div className="displayDivided">
+            <label>City Location:</label>
+            <p>{this.props.searchData[0].VenueCity}</p>
+          </div>
+          <br />
+          <div className="displayDivided">
+            <p>{this.props.searchData[0].VenueName}</p>
+          </div>
+          <br />
+          <div className="displayDivided">
+            <p>{this.props.searchData[0].MinPrice}</p>
+          </div>
+          <br />
+          <div className="displayDivided">
+            <p>{this.props.searchData[0].Date}</p>
+          </div>
+          <br />
+          <div className="displayDivided">
+            <p>{this.props.searchData[0].Time}</p>
+          </div>
+        </div>
       </div>
     );
   };
@@ -33,7 +47,7 @@ class DisplaySearchResultsWithData extends Component {
   render() {
     // console.log(this.props.searchData[0], "the final dayta");
     return (
-      <div>
+      <div className="resultsWithDataContainer">
         {this.displayAllTicketInfo()}
         {this.editDays()}
       </div>

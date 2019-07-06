@@ -1,0 +1,21 @@
+.resultsWithDataContainer {
+  width: 100%;
+  display: flex;
+}
+
+.displayResults {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.innerDisplayResults {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.displayDivided {
+  display: flex;
+}
