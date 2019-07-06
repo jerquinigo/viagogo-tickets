@@ -34,14 +34,22 @@
   height: 100%;
   flex-direction: column;
   text-align: left;
+  width: 30%;
 }
 
-.displayPTag {
+.displayPTag p {
+  margin: 0px;
   margin-right: 2%;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0;
   padding: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .displayMiddle {
@@ -49,9 +57,11 @@
   height: 100%;
   flex-direction: column;
   text-align: left;
+  width: 30%;
 }
 
 .displayRight {
   display: flex;
   text-align: left;
+  width: 30%;
 }

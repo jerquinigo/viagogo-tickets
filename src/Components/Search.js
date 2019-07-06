@@ -72,28 +72,28 @@ class Search extends Component {
       return (
         <div className="displayTicketInfoContainer">
           <div className="displayLeft">
-            <p classname="displayPTag">{tix.Day}</p>
+            <span classname="displayPTag">Weekday: {tix.Day}</span>
 
             <br />
 
-            <p classname="displayPTag">{tix.Date}</p>
+            <span classname="displayPTag">Date: {tix.Date}</span>
             <br />
 
-            <p classname="displayPTag">{tix.Time}</p>
+            <span classname="displayPTag">Time: {tix.Time}</span>
 
             <br />
           </div>
           <div className="displayMiddle">
-            <p classname="displayPTag">{tix.VenueName}</p>
+            <span classname="displayPTag">Venue: {tix.VenueName}</span>
             <br />
-            <p classname="displayPTag">{tix.VenueCity}</p>
+            <span classname="displayPTag">Location: {tix.VenueCity}</span>
             <br />
-            <p classname="displayPTag">{tix.EventName}</p>
+            <span classname="displayPTag">Performer: {tix.EventName}</span>
 
             <br />
           </div>
           <div className="displayRight">
-            <p classname="displayPTag">{tix.MinPrice}</p>
+            <span classname="displayPTag"> Price: {tix.MinPrice}</span>
           </div>
         </div>
       );
