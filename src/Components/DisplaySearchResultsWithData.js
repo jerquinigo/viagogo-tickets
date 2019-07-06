@@ -55,7 +55,7 @@ class DisplaySearchResultsWithData extends Component {
         <div className="displayRight">
           <span classname="displayPTag">
             {" "}
-            Price: {this.props.searchData[0].MinPrice}
+            Price: <strong>{this.props.searchData[0].MinPrice}</strong>
           </span>
         </div>
       </div>

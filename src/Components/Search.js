@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DisplaySearchResults from "./DisplaySearchResults.js";
+import eltonBanner from "../ASSETS/elton_john_banner.jpg";
 import "../CSS/Search.css";
 const tickets = require("../tickets.js");
 //tickets.default.Items
@@ -25,6 +26,7 @@ class Search extends Component {
       <div className="calendarInputDiv">
         <label>enter start date</label>
         <input
+          className="selectTag"
           onChange={this.handleChange}
           type="date"
           name="dateStart"
@@ -32,6 +34,7 @@ class Search extends Component {
         />
         <label>enter end date</label>
         <input
+          className="selectTag"
           onChange={this.handleChange}
           type="date"
           name="dateEnd"
@@ -105,7 +108,10 @@ class Search extends Component {
             <br />
           </div>
           <div className="displayRight">
-            <span classname="displayPTag"> Price: {tix.MinPrice}</span>
+            <span classname="displayPTag">
+              {" "}
+              Price: <strong>{tix.MinPrice}</strong>
+            </span>
           </div>
         </div>
       );
@@ -119,9 +125,13 @@ class Search extends Component {
     return (
       <div className="mainSearchContainer">
         <div className="innerSearchContainer">
-          search Component
+          <div>
+            <img className="eltonBannerPic" src={eltonBanner} alt="" />
+          </div>
           <div className="selectionInput">
+            <span>Select City: </span>
             <select
+              className="selectTag"
               onChange={this.handleChange}
               name="location"
               value={this.state.location}
@@ -130,7 +140,9 @@ class Search extends Component {
               {this.displayLocations()}
             </select>
 
+            <span>Select Price:</span>
             <select
+              className="selectTag"
               onChange={this.handleChange}
               name="price"
               value={this.state.price}
