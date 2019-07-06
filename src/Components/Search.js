@@ -70,23 +70,31 @@ class Search extends Component {
     let ticInfo = Object.values(tickets.default.Items);
     return ticInfo.map(tix => {
       return (
-        <div>
-          <p>{tix.VenueCity}</p>
+        <div className="displayTicketInfoContainer">
+          <div className="displayLeft">
+            <p classname="displayPTag">{tix.Day}</p>
 
-          <br />
+            <br />
 
-          <p>{tix.VenueName}</p>
-          <br />
+            <p classname="displayPTag">{tix.Date}</p>
+            <br />
 
-          <p>{tix.MinPrice}</p>
+            <p classname="displayPTag">{tix.Time}</p>
 
-          <br />
+            <br />
+          </div>
+          <div className="displayMiddle">
+            <p classname="displayPTag">{tix.VenueName}</p>
+            <br />
+            <p classname="displayPTag">{tix.VenueCity}</p>
+            <br />
+            <p classname="displayPTag">{tix.EventName}</p>
 
-          <p>{tix.Date}</p>
-
-          <br />
-
-          <p>{tix.Time}</p>
+            <br />
+          </div>
+          <div className="displayRight">
+            <p classname="displayPTag">{tix.MinPrice}</p>
+          </div>
         </div>
       );
     });
@@ -120,7 +128,9 @@ class Search extends Component {
             </select>
           </div>
           {this.calendarInputs()}
-          {!this.state.price && !this.state.location ? (
+          {(!this.state.price && !this.state.location) ||
+          (this.state.price === "Select value/All" ||
+            this.state.location === "select city") ? (
             this.displayAllData()
           ) : (
             <DisplaySearchResults

@@ -21,3 +21,37 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.displayTicketInfoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+.displayLeft {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.displayPTag {
+  margin-right: 2%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.displayMiddle {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.displayRight {
+  display: flex;
+  text-align: left;
+}
