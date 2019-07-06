@@ -18,27 +18,45 @@ class DisplaySearchResultsWithData extends Component {
     //needs this.props.searchData.nameoftarget for me to access it
     return (
       <div className="displayResults">
-        <div className="innerDisplayResults">
-          <div className="displayDivided">
-            <label>City Location:</label>
-            <p>{this.props.searchData[0].VenueCity}</p>
-          </div>
+        <div className="displayLeft">
+          <span classname="displayPTag">
+            Weekday: <strong>{this.props.searchData[0].Day}</strong>
+          </span>
+
           <br />
-          <div className="displayDivided">
-            <p>{this.props.searchData[0].VenueName}</p>
-          </div>
+
+          <span classname="displayPTag">
+            Date: <strong>{this.props.searchData[0].Date}</strong>
+          </span>
           <br />
-          <div className="displayDivided">
-            <p>{this.props.searchData[0].MinPrice}</p>
-          </div>
+
+          <span classname="displayPTag">
+            Time: <strong>{this.props.searchData[0].Time}</strong>
+          </span>
+
           <br />
-          <div className="displayDivided">
-            <p>{this.props.searchData[0].Date}</p>
-          </div>
+        </div>
+
+        <div className="displayMiddle">
+          <span classname="displayPTag">
+            Venue: <strong>{this.props.searchData[0].VenueName}</strong>
+          </span>
           <br />
-          <div className="displayDivided">
-            <p>{this.props.searchData[0].Time}</p>
-          </div>
+          <span classname="displayPTag">
+            Location: <strong>{this.props.searchData[0].VenueCity}</strong>
+          </span>
+          <br />
+          <span classname="displayPTag">
+            Performer: <strong>{this.props.searchData[0].EventName}</strong>
+          </span>
+
+          <br />
+        </div>
+        <div className="displayRight">
+          <span classname="displayPTag">
+            {" "}
+            Price: {this.props.searchData[0].MinPrice}
+          </span>
         </div>
       </div>
     );
