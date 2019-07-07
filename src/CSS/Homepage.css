@@ -10,3 +10,16 @@
 .dividerForCarousel {
   margin-top: 10%;
 }
+
+.descriptionText {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 700;
+}
+
+.descriptionContainer {
+  width: 100%;
+  display: inline-block;
+}

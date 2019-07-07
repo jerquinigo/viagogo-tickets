@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DisplaySearchResults from "./DisplaySearchResults.js";
 import eltonBanner from "../ASSETS/elton_john_banner.jpg";
+import { Link } from "react-router-dom";
 import "../CSS/Search.css";
 const tickets = require("../tickets.js");
 //tickets.default.Items
@@ -101,6 +102,7 @@ class Search extends Component {
               Location: <strong>{tix.VenueCity}</strong>
             </span>
             <br />
+
             <span classname="displayPTag">
               Performer: <strong>{tix.EventName}</strong>
             </span>
@@ -108,10 +110,17 @@ class Search extends Component {
             <br />
           </div>
           <div className="displayRight">
-            <span classname="displayPTag">
+            <span classname="displayPriceTag">
               {" "}
               Price: <strong>{tix.MinPrice}</strong>
             </span>
+            <Link className="buttonLinkTag" to={`/events/${tix.EventId}`}>
+              <div className="buttonSpacer">
+                <span className="buttonSpan">
+                  <span className="textThatsButton">view tickets here</span>
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       );

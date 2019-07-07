@@ -8,10 +8,12 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepageContainer">
-        <p>
-          Come watch the Legendary Elton John perform at your choice of location
-          for a great price.
-        </p>
+        <div className="descriptionContainer">
+          <span className="descriptionText">
+            Come watch the legendary, Elton John perform at your choice of
+            location for a great price.
+          </span>
+        </div>
 
         <Link to="/search">
           <button>Search Tickets</button>
