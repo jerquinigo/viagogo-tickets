@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../CSS/DisplaySearchResultsWithData.css";
 const tickets = require("../tickets.js");
 
@@ -53,10 +54,20 @@ class DisplaySearchResultsWithData extends Component {
           <br />
         </div>
         <div className="displayRight">
-          <span classname="displayPTag">
+          <span classname="displayPriceTag">
             {" "}
             Price: <strong>{this.props.searchData[0].MinPrice}</strong>
           </span>
+          <Link
+            className="buttonLinkTag"
+            to={`/events/${this.props.searchData[0].EventId}`}
+          >
+            <div className="buttonSpacer">
+              <span className="buttonSpan">
+                <span className="textThatsButton">view tickets here</span>
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     );
