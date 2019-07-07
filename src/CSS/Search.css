@@ -83,7 +83,9 @@
   border-bottom: 1px solid #dfdfe0;
   border-top: 1px solid #dfdfe0;
   border-right: 1px solid #dfdfe0;
+  border-left: 1px solid #dfdfe0;
   background-color: #efefef;
+  margin-left: 8%;
 }
 
 .displayPTag p {
@@ -120,4 +122,6 @@
   width: 30%;
   border-bottom: 1px solid #dfdfe0;
   border-top: 1px solid #dfdfe0;
+  margin-right: 7%;
+  border-right: 1px solid #dfdfe0;
 }
