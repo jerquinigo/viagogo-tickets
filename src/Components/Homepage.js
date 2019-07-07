@@ -18,6 +18,7 @@ class Homepage extends Component {
         </Link>
 
         <Carousel />
+        <div className="dividerForCarousel" />
       </div>
     );
   }
