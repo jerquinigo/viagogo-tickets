@@ -8,16 +8,14 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepageContainer">
-        <div className="descriptionContainer">
-          <span className="descriptionText">
-            Come watch the legendary, Elton John perform at your choice of
-            location for a great price.
-          </span>
+        <div className="discriptionStyleDiv">
+          <div className="descriptionContainer">
+            <span className="descriptionText">
+              Come watch the legendary, Elton John perform at your choice of
+              location for a great price.
+            </span>
+          </div>
         </div>
-
-        <Link to="/search">
-          <button>Search Tickets</button>
-        </Link>
 
         <Carousel />
         <div className="dividerForCarousel" />
@@ -25,6 +23,10 @@ class Homepage extends Component {
     );
   }
 }
+
+// <Link to="/search">
+//   <button>Search Tickets</button>
+// </Link>
 
 export default Homepage;
 
