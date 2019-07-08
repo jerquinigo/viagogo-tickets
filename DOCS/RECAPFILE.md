@@ -11,7 +11,7 @@ https://gist.github.com/taddison/ab00ecd1a2703fa661b4f7a9ccf46267
 
 ### My Response(Part 1)
 
-- i was able to parse the given json file and work with it throughout the project.i used information that was relevant for users based on the json file provided.
+- i was able to parse the given JSON file and work with it throughout the project.i used information that was relevant for users based on the JSON file provided.
 
 ### Part 2
 

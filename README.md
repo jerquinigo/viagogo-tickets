@@ -1,4 +1,4 @@
-# Viagogo Project
+# Viagogo's Project
 
 # ViaEltonGo
 
@@ -37,7 +37,7 @@ Customer will be able to
 
 ---
 
-- Please clone my project to local machine. Once cloned, please cd into project folder and npm install. Once all packages installed please run, npm start and a localhost:3000 will appear with ViaEltonGo application in your web browser. Thank you.
+- Please clone my project to local machine. Once cloned, please cd into project folder and npm install. Once all packages installed please run npm start and a localhost:3000 will appear with ViaEltonGo application in your web browser. Thank you.
 
 ---
 
