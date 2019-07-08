@@ -22,3 +22,11 @@ Customer will be able to
 ---
 
 - ### [View wireframes](./DOCS/wireframes)
+
+---
+
+## For Viagogo's coding project requirements and my feedback, please click "Viagogo's questions and answers"
+
+---
+
+## [Viagogo's questions and answers](./DOCS/RECAPFILE.md)
