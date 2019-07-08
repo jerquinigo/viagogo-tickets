@@ -7,7 +7,7 @@ import DisplayUniqueTicket from "./Components/DisplayUniqueTicket.js";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 // import { tickets } from "./tickets.js";
-const tickets = require("./tickets.js");
+// const tickets = require("./tickets.js");
 //tickets.default.Items
 function App() {
   // console.log(tickets.default.Items, "the api");

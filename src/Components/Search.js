@@ -72,45 +72,45 @@ class Search extends Component {
 
   displayAllData = () => {
     let ticInfo = Object.values(tickets.default.Items);
-    return ticInfo.map(tix => {
+    return ticInfo.map((tix, i) => {
       return (
-        <div className="displayTicketInfoContainer">
+        <div keyclassName="displayTicketInfoContainer">
           <div className="displayLeft">
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Weekday: <strong>{tix.Day}</strong>
             </span>
 
             <br />
 
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Date: <strong>{tix.Date}</strong>
             </span>
             <br />
 
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Time: <strong>{tix.Time}</strong>
             </span>
 
             <br />
           </div>
           <div className="displayMiddle">
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Venue: <strong>{tix.VenueName}</strong>
             </span>
             <br />
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Location: <strong>{tix.VenueCity}</strong>
             </span>
             <br />
 
-            <span classname="displayPTag">
+            <span className="displayPTag">
               Performer: <strong>{tix.EventName}</strong>
             </span>
 
             <br />
           </div>
           <div className="displayRight">
-            <span classname="displayPriceTag">
+            <span className="displayPriceTag">
               {" "}
               Price: <strong>{tix.MinPrice}</strong>
             </span>
@@ -130,7 +130,7 @@ class Search extends Component {
   render() {
     // console.log(typeof tickets.default.Items, "the items");
     // console.log(this.state, "location");
-    console.log(this.state.dateStart, "the start date");
+    // console.log(this.state.dateStart, "the start date");
     return (
       <div className="mainSearchContainer">
         <div className="innerSearchContainer">
