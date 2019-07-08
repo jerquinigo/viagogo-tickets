@@ -57,7 +57,7 @@ class DisplaySearchResults extends Component {
   };
 
   render() {
-    console.log(this.props.dateEnd, "in the searchResults");
+    // console.log(this.props.dateEnd, "in the searchResults");
     return <div>{this.displayTicketResults()}</div>;
   }
 }

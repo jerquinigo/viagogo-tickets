@@ -72,9 +72,9 @@ class Search extends Component {
 
   displayAllData = () => {
     let ticInfo = Object.values(tickets.default.Items);
-    return ticInfo.map((tix, i) => {
+    return ticInfo.map(tix => {
       return (
-        <div keyclassName="displayTicketInfoContainer">
+        <div key={tix.EventId} className="displayTicketInfoContainer">
           <div className="displayLeft">
             <span className="displayPTag">
               Weekday: <strong>{tix.Day}</strong>

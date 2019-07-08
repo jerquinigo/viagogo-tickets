@@ -12,7 +12,7 @@ class DisplaySearchResultsWithData extends Component {
     let start = this.props.dateStart;
     let end = this.props.dateEnd;
 
-    console.log(start, "the value in the final component");
+    // console.log(start, "the value in the final component");
   };
 
   displayAllTicketInfo = () => {
@@ -20,18 +20,18 @@ class DisplaySearchResultsWithData extends Component {
     return (
       <div className="displayResults">
         <div className="displayLeft">
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Weekday: <strong>{this.props.searchData[0].Day}</strong>
           </span>
 
           <br />
 
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Date: <strong>{this.props.searchData[0].Date}</strong>
           </span>
           <br />
 
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Time: <strong>{this.props.searchData[0].Time}</strong>
           </span>
 
@@ -39,22 +39,22 @@ class DisplaySearchResultsWithData extends Component {
         </div>
 
         <div className="displayMiddle">
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Venue: <strong>{this.props.searchData[0].VenueName}</strong>
           </span>
           <br />
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Location: <strong>{this.props.searchData[0].VenueCity}</strong>
           </span>
           <br />
-          <span classname="displayPTag">
+          <span className="displayPTag">
             Performer: <strong>{this.props.searchData[0].EventName}</strong>
           </span>
 
           <br />
         </div>
         <div className="displayRight">
-          <span classname="displayPriceTag">
+          <span className="displayPriceTag">
             {" "}
             Price: <strong>{this.props.searchData[0].MinPrice}</strong>
           </span>

@@ -15,7 +15,7 @@ class DisplayUniqueTicket extends Component {
     return ticInfo.map(tix => {
       if (tix.EventId === parseInt(this.props.match.params.id)) {
         return (
-          <div className="DisplayUniqueTicketContainer">
+          <div key={tix.EventId} className="DisplayUniqueTicketContainer">
             <div className="innerDisplayUniqueTicketContainer">
               <span className="displayResultsSpan">
                 Venue Description: <strong>{tix.LinkTitleText}</strong>
