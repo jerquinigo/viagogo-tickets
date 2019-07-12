@@ -1,0 +1,51 @@
+.DisplayUniqueTicketContainer {
+  width: 100%;
+  display: flex;
+  /* margin-left: 20%; */
+}
+
+.innerDisplayUniqueTicketContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-left: 3%;
+  margin-top: 2%;
+}
+
+.displayResultsSpan {
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5em;
+  border-top: 2.5px solid #dfdfe0;
+  border-bottom: 2.5px solid #dfdfe0;
+  border-left: 2.5px solid #dfdfe0;
+  border-right: 2.5px solid #dfdfe0;
+  padding-left: 5%;
+  width: 60%;
+  text-align: left;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  padding-right: 3%;
+  margin-top: 2%;
+}
+
+.eltonImage {
+  width: 100%;
+}

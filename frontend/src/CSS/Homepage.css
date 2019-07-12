@@ -1,0 +1,39 @@
+.eltonLandingPic {
+  width: 30%;
+  height: 30%;
+}
+
+.homepageContainer {
+  width: 100%;
+  background-color: #efefef;
+}
+
+.dividerForCarousel {
+  /* margin-top: 10%; */
+  background-color: #efefef;
+  height: 100vh;
+}
+
+.descriptionText {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+
+.descriptionContainer {
+  width: 50%;
+  display: flex;
+}
+
+.discriptionStyleDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dividerForCarousel {
+  background-color: #efefef;
+}
